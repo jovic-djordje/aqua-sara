@@ -1,5 +1,7 @@
+import Offer from "./Offers";
+
 const Home = () => {
-  return <h1>Home</h1>;
+  return <Offer />;
 };
 
 export default Home;

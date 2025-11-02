@@ -50,7 +50,7 @@ nav {
 /* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
   .header-holder {
-    width: 90%;
+    width: 95%;
   }
 }
 
