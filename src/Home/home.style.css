@@ -25,7 +25,7 @@
   width: 100%;
 }
 
-.offer-title {
+.h2-titles {
   font-family: "Outfit";
   font-size: 40px;
   font-weight: 500;
@@ -114,6 +114,36 @@
   height: 100%;
 }
 
+/* GALLERY SECTION*/
+.gallery {
+  padding: 70px 0px;
+}
+
+.gallery-section-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.galley-holder {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.gallery-img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 16px;
+}
+
 @media screen and (max-width: 1200px) {
   .sections-holder {
     width: 95%;
@@ -121,7 +151,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .offer-title {
+  .h2-titles {
     font-size: 35px;
   }
 
@@ -190,5 +220,13 @@
 
   .offer-sec-img {
     max-height: 260px;
+  }
+
+  .galley-holder {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .h2-titles {
+    text-align: center;
   }
 }
