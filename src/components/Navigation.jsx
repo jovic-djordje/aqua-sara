@@ -6,7 +6,7 @@ const Navigation = () => {
   return (
     <header>
       <div className="header-holder">
-        <Logo clasName="logo" />
+        <Logo className="logo" />
         <nav>
           <Link to="/" className="nav-item-link">
             <span className="nav-item">Početna</span>
