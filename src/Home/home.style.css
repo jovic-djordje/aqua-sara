@@ -1,3 +1,8 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 /* OFFER SECTION */
 .offer {
   padding: 70px 0px;
@@ -144,6 +149,124 @@
   border-radius: 16px;
 }
 
+/* FAQ-SECTION */
+.faq {
+  padding: 70px 0px;
+}
+
+.faq-section-holder {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.faq-text-holder {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: self-start;
+  gap: 20px;
+}
+
+.questions-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+
+.faq-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  border: 1px solid #c4c3c3;
+  padding: 16px 16px;
+  border-radius: 16px;
+}
+
+.qst-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.qst-holder h4 {
+  font-family: "Outfit";
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.answ {
+  max-width: 700px;
+  width: 100%;
+  line-height: 1.5;
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-5px);
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+}
+
+.open {
+  max-height: 110px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.qst-icon {
+  font-size: 20px;
+  cursor: pointer;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.faq-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.faq-cta h3 {
+  font-family: "Outfit";
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.faq-cta-link {
+  width: 100%;
+}
+
+.faq-cta-btn {
+  max-width: 120px;
+  width: 100%;
+  border-radius: 16px;
+  padding: 6px 0px;
+  font-family: inherit;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1200px) {
   .sections-holder {
     width: 95%;
@@ -193,6 +316,26 @@
   .offer-sec-img {
     max-height: 250px;
   }
+
+  .faq-text {
+    font-size: 15px;
+  }
+
+  .qst-holder h4 {
+    font-size: 17px;
+  }
+
+  .answ {
+    font-size: 15px;
+  }
+
+  .faq-cta h3 {
+    font-size: 25px;
+  }
+
+  .faq-cta p {
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -211,6 +354,10 @@
   .cart-offer-btn {
     font-size: 14px;
   }
+
+  .qst-holder h4 {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -228,5 +375,9 @@
 
   .h2-titles {
     text-align: center;
+  }
+
+  .faq-title {
+    text-align: start !important;
   }
 }
