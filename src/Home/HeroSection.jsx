@@ -1,5 +1,4 @@
-{
-  /*import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import {
   GalleryImgFive,
@@ -23,10 +22,10 @@ const HeroSection = () => {
     <section className="hero-section">
       <div className="hero-section-holder sections-holder">
         <div className="hero-text-holder">
-          <h1 className="hero-title">Zdrava voda. Pametan izbor</h1>
+          <h1 className="hero-title">Čista voda. Pametan aparat</h1>
           <p className="hero-text">
-            Čista voda susreće modernu tehnologiju. Doživite udobnost i
-            održivost u svakom gutljaju.
+            Spoj moderne tehnologije i svakodnevne udobnosti - idealno rješenje
+            za vaš dom ili kancelariju.
           </p>
           <Link to="/aparati" className="hero-btn-link">
             <button className="hero-btn">Pogledajte našu ponudu</button>
@@ -57,5 +56,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;*/
-}
+export default HeroSection;
