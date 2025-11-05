@@ -2,7 +2,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 }
-/* HERO SECTION 
+/* HERO SECTION */
 
 .hero-section {
   padding: 70px 0px;
@@ -50,6 +50,7 @@ html {
   font-family: inherit;
   font-weight: 500;
   cursor: pointer;
+  color: #000;
 }
 
 .hero-img {
@@ -96,7 +97,7 @@ html {
   transform: scale(1.05);
 }
 
-/* BESKONAČNI LOOP - ključ 
+/* BESKONAČNI LOOP - ključ */
 @keyframes scroll-loop {
   0% {
     transform: translateY(0);
@@ -279,12 +280,12 @@ html {
 }
 
 .questions-holder {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
   gap: 20px;
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .faq-holder {
@@ -379,6 +380,10 @@ html {
   .hero-title {
     font-size: 50px;
   }
+
+  .hero-section-holder {
+    gap: 50px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -445,22 +450,18 @@ html {
     font-size: 15px;
   }
 
-  /*.hero-section-holder {
-    gap: 1.5rem;
-  }
-
   .hero-title {
-    font-size: 42px;
+    font-size: 45px;
   }
 
   .hero-text {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .carousel {
     max-width: 440px;
     height: 420px;
-  }*/
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -488,34 +489,36 @@ html {
     font-size: 16px;
   }
 
-  /*.hero-section-holder {
+  .hero-section-holder {
     flex-direction: column;
-    text-align: center;
+    align-items: flex-start;
     gap: 50px;
   }
 
   .hero-text-holder {
-    align-items: center;
-    max-width: 100%;
+    max-width: 450px;
   }
 
   .hero-title {
-    font-size: 38px;
+    font-size: 50px;
   }
 
   .hero-text {
-    font-size: 15px;
-    max-width: 90%;
+    font-size: 16px;
   }
 
-  .hero-btn {
-    font-size: 15px;
+  .hero-img {
+    max-width: 380px;
   }
 
   .carousel {
     height: 400px;
     max-width: 800px;
-  }*/
+  }
+
+  .hero-img:hover {
+    transform: none;
+  }
 }
 
 @media screen and (max-width: 520px) {
@@ -539,17 +542,8 @@ html {
     text-align: start !important;
   }
 
-  /* .hero-title {
-    font-size: 30px;
-  }
-
-  .hero-text {
-    font-size: 14px;
-  }
-
-  .hero-btn {
-    font-size: 14px;
-    max-width: 160px;
+  .hero-title {
+    font-size: 45px;
   }
 
   .carousel {
@@ -557,7 +551,7 @@ html {
     height: 360px;
   }
 
-  .column {
-    gap: 1rem;
-  }*/
+  .questions-holder {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
