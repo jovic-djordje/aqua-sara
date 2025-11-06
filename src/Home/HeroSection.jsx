@@ -18,11 +18,12 @@ const HeroSection = () => {
     { id: 5, img: <GalleryImgFive className="hero-img" /> },
     { id: 6, img: <GalleryImgSix className="hero-img" /> },
   ];
+
   return (
     <section className="hero-section">
       <div className="hero-section-holder sections-holder">
         <div className="hero-text-holder">
-          <h1 className="hero-title">Čista voda. Pametan aparat</h1>
+          <h1 className="hero-title">Čista voda. Pametan aparat.</h1>
           <p className="hero-text">
             Spoj moderne tehnologije i svakodnevne udobnosti - idealno rješenje
             za vaš dom ili kancelariju.
