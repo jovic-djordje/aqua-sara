@@ -1,0 +1,53 @@
+section {
+  padding: 70px 0px;
+}
+
+/* HERO SECTION */
+
+.contact-hero-sec-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.contact-hero-sec-holder h1 {
+  font-family: "Outfit";
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.contact-hero-sec-holder p {
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 1200px) {
+  .sections-holder {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .contact-hero-sec-holder p {
+    font-size: 15px;
+  }
+
+  .contact-hero-sec-holder h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contact-hero-sec-holder h1 {
+    font-size: 45px;
+  }
+
+  .contact-hero-sec-holder p {
+    font-size: 16px;
+  }
+}
