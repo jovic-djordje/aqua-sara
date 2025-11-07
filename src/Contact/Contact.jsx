@@ -1,7 +1,13 @@
+import ContactForm from "./ContactForm";
 import ContactHero from "./ContactHero";
 
 const Contact = () => {
-  return <ContactHero />;
+  return (
+    <>
+      <ContactHero />
+      <ContactForm />
+    </>
+  );
 };
 
 export default Contact;
