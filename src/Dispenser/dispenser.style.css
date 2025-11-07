@@ -1,0 +1,47 @@
+.dispenser-hero-section-holder {
+  max-width: 600px;
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.dispenser-hero-section-holder h1 {
+  font-size: 60px;
+  font-family: "Outfit";
+  font-weight: 500;
+}
+
+.dispenser-hero-section-holder p {
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 1200px) {
+  .sections-holder {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .dispenser-hero-section-holder h1 {
+    font-size: 50px;
+  }
+
+  .dispenser-hero-section-holder p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .dispenser-hero-section-holder h1 {
+    font-size: 45px;
+  }
+
+  .dispenser-hero-section-holder p {
+    font-size: 16px;
+  }
+}
