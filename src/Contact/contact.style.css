@@ -2,6 +2,17 @@ section {
   padding: 70px 0px;
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
 /* HERO SECTION */
 
 .contact-hero-sec-holder {
@@ -10,7 +21,7 @@ section {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  max-width: 1200px;
+  max-width: 600px;
   width: 100%;
   margin: 0px auto;
   text-align: center;
@@ -24,6 +35,197 @@ section {
 
 .contact-hero-sec-holder p {
   line-height: 1.5;
+}
+
+/* FORM SECTION */
+.form-section-holder {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.form-text-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.title-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.form-title {
+  font-family: "Outfit";
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.form-text {
+  line-height: 1.5;
+}
+
+.buss-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.info-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.info-details a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.info-detail-icon {
+  width: 20px;
+  height: 20px;
+}
+
+form {
+  max-width: 550px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.name,
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.first-name,
+.email,
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+}
+
+.label-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.label-holder p {
+  font-size: 11px;
+  color: #eb2f06;
+}
+
+.first-name input {
+  width: 100%;
+  padding: 10px 0px;
+  background: transparent;
+  border: 1px solid #c4c3c3;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: inherit;
+  text-indent: 10px;
+  text-transform: capitalize;
+}
+
+.first-name input:focus {
+  outline: #ffffff;
+}
+
+.email input {
+  width: 100%;
+  padding: 10px 0px;
+  background: transparent;
+  border: 1px solid #c4c3c3;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: inherit;
+  text-indent: 10px;
+}
+
+.email input:focus {
+  outline: #ffffff;
+}
+
+textarea {
+  max-width: 550px;
+  width: 100%;
+  min-height: 180px;
+  background: transparent;
+  border: 1px solid #c4c3c3;
+  border-radius: 8px;
+  padding: 10px;
+  color: #ffffff;
+  font-family: "Quicksand";
+}
+
+textarea::placeholder {
+  font-family: "Quicksand";
+  font-size: 15px;
+}
+
+textarea:focus {
+  outline: #ffffff;
+}
+
+.form-btn {
+  align-self: flex-start;
+  max-width: 120px;
+  width: 100%;
+  border-radius: 16px;
+  padding: 8px 0px;
+  font-family: inherit;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  color: #000;
+  background-color: #ffffff;
+}
+
+.success-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.success-mess-title {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit";
+  font-weight: 500;
+  font-size: 25px;
+  color: green;
 }
 
 @media screen and (max-width: 1200px) {
@@ -40,6 +242,31 @@ section {
   .contact-hero-sec-holder h1 {
     font-size: 50px;
   }
+
+  .form-title {
+    font-size: 35px;
+  }
+
+  .form-text {
+    font-size: 15px;
+  }
+
+  .buss-info {
+    font-size: 15px;
+  }
+
+  form {
+    font-size: 15px;
+  }
+
+  .success-mess-title {
+    font-size: 18px;
+  }
+
+  .success-mess-text {
+    font-size: 15px;
+    line-height: 1.5;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -49,5 +276,32 @@ section {
 
   .contact-hero-sec-holder p {
     font-size: 16px;
+  }
+
+  .form-section-holder {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  form {
+    max-width: 800px;
+  }
+
+  textarea {
+    max-width: 800px;
+  }
+
+  .success-mess-title {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .label-holder p {
+    font-size: 10px;
+  }
+
+  .success-mess-title {
+    font-size: 20px;
   }
 }
