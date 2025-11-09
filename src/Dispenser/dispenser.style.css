@@ -1,3 +1,4 @@
+/* HERO SECTION*/
 .dispenser-hero-section-holder {
   max-width: 600px;
   width: 100%;
@@ -20,6 +21,157 @@
   line-height: 1.5;
 }
 
+/* OFFER SECTION */
+.dispenser-offer-holder {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.dispenser-offer-text-holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+
+.dispenser-title-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.dispenser-title-holder h2 {
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "Outfit";
+}
+
+/* FILTER HOVER EFFECT */
+.filter-holder {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 8px;
+  cursor: pointer;
+}
+
+/* Sakrij dugmiće dok se ne hoveruje */
+.filter-buttons {
+  display: flex;
+  gap: 12px;
+  opacity: 0;
+  transform: translateX(40px); /* pomjereni desno van ikone */
+  transition: all 0.4s ease;
+  pointer-events: none; /* da se ne mogu kliknuti dok nisu vidljivi */
+}
+
+.filter-buttons button {
+  background: transparent;
+  color: #fff;
+  border: none;
+  font-family: "Outfit";
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* Kada je aktivan (kliknuto) */
+.filter-holder.active .filter-buttons {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+/* Samu ikonu možeš malo uvećati na hover radi efekta */
+.filter-icon {
+  font-size: 35px;
+  transition: transform 0.3s ease;
+}
+
+.display {
+  display: none;
+  font-size: 35px;
+  transition: transform 0.3s ease;
+}
+
+.filter-holder.active .filter-icon {
+  transform: rotate(90deg);
+}
+
+.dispensers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.dis-cart {
+  max-width: 380px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.dis-offer-img {
+  border-radius: 16px;
+  width: 100%;
+}
+
+.dis-offer-img:hover {
+  transform: scale(1.05);
+}
+
+.dis-cart-dtl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: "Outfit";
+}
+
+.dis-cart-name {
+  font-size: 18px;
+}
+
+.dis-cart-cat {
+  align-self: flex-start;
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+.dis-cart-btn {
+  width: 100%;
+  padding: 8px 0px;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+  font-weight: 500;
+}
+
+.dis-cart-btn:hover {
+  color: #fff;
+  background: transparent;
+  border: 1px solid #fff;
+}
+
 @media screen and (max-width: 1200px) {
   .sections-holder {
     width: 95%;
@@ -34,6 +186,26 @@
   .dispenser-hero-section-holder p {
     font-size: 15px;
   }
+
+  .dispenser-title-holder h2 {
+    font-size: 35px;
+  }
+
+  .dispenser-title-holder p {
+    font-size: 15px;
+  }
+
+  .dis-cart-name {
+    font-size: 16px;
+  }
+
+  .dis-cart-price {
+    font-size: 15px;
+  }
+
+  .filter-buttons button {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -43,5 +215,52 @@
 
   .dispenser-hero-section-holder p {
     font-size: 16px;
+  }
+
+  .dispensers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dispenser-offer-text-holder {
+    flex-direction: column-reverse;
+    gap: 12px;
+  }
+
+  .filter-holder.active .display {
+    transform: rotate(-90deg); /* <-- sada ide u suprotnom smjeru */
+  }
+
+  .filter-holder {
+    flex-direction: row-reverse;
+  }
+
+  .filter-buttons button {
+    font-size: 14px;
+  }
+
+  .filter-icon {
+    display: none;
+  }
+
+  .display {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .dis-cart-name {
+    font-size: 11px;
+  }
+
+  .dis-cart-price {
+    font-size: 10px;
+  }
+
+  .dis-cart-cat {
+    font-size: 10px;
+  }
+
+  .dis-cart {
+    margin-bottom: 4px;
   }
 }
