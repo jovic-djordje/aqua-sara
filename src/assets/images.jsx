@@ -9,6 +9,13 @@ import galleryImgThree from "./galerija (3).webp";
 import galleryImgFour from "./galerija (4).webp";
 import galleryImgFive from "./galerija (5).webp";
 import galleryImgSix from "./galerija (6).webp";
+import offerImgOne from "./Colisha.webp";
+import offerImgTwo from "./DZV-1701.webp";
+import offerImgThree from "./DZV-2004 K.webp";
+import offerImgFour from "./DZV-2003.webp";
+import offerImgFive from "./DZV-2005.webp";
+import offerImgSix from "./DZV-2021.webp";
+import offerImgSeven from "./DZV-2024 BD A.webp";
 
 const Logo = ({ className }) => {
   return <img src={logo} alt="aqua sara logo" className={className} />;
@@ -88,6 +95,65 @@ const GalleryImgSix = ({ className }) => {
     />
   );
 };
+
+const OfferImgOne = ({ className }) => {
+  return (
+    <img src={offerImgOne} alt="Colisha aparat za vodu" className={className} />
+  );
+};
+
+const OfferImgTwo = ({ className }) => {
+  return (
+    <img src={offerImgTwo} alt="Colisha aparat za vodu" className={className} />
+  );
+};
+
+const OfferImgThree = ({ className }) => {
+  return (
+    <img
+      src={offerImgThree}
+      alt="Colisha aparat za vodu"
+      className={className}
+    />
+  );
+};
+
+const OfferImgFour = ({ className }) => {
+  return (
+    <img
+      src={offerImgFour}
+      alt="Colisha aparat za vodu"
+      className={className}
+    />
+  );
+};
+
+const OfferImgFive = ({ className }) => {
+  return (
+    <img
+      src={offerImgFive}
+      alt="Colisha aparat za vodu"
+      className={className}
+    />
+  );
+};
+
+const OfferImgSix = ({ className }) => {
+  return (
+    <img src={offerImgSix} alt="Colisha aparat za vodu" className={className} />
+  );
+};
+
+const OfferImgSeven = ({ className }) => {
+  return (
+    <img
+      src={offerImgSeven}
+      alt="Colisha aparat za vodu"
+      className={className}
+    />
+  );
+};
+
 export {
   Logo,
   WaterOne,
@@ -100,4 +166,11 @@ export {
   GalleryImgFour,
   GalleryImgFive,
   GalleryImgSix,
+  OfferImgOne,
+  OfferImgTwo,
+  OfferImgThree,
+  OfferImgFour,
+  OfferImgFive,
+  OfferImgSix,
+  OfferImgSeven,
 };
