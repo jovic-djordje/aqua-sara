@@ -223,7 +223,7 @@ html {
   height: 100%;
 }
 
-/* GALLERY SECTION*/
+/* GALLERY SECTION
 .gallery {
   padding: 70px 0px;
 }
@@ -247,11 +247,8 @@ html {
   gap: 20px;
 }
 
-.gallery-img {
-  max-width: 400px;
-  width: 100%;
-  border-radius: 16px;
-}
+
+} */
 
 /* FAQ-SECTION */
 .faq {
