@@ -121,7 +121,7 @@ const ContactForm = () => {
             {/* FAX */}
             <div className="info-details">
               <LuPhone className="info-detail-icon" />
-              <a href="tel:+011417377">
+              <a href="tel:+381114127377">
                 <span>011/412 73 77</span>
               </a>
             </div>
@@ -130,10 +130,10 @@ const ContactForm = () => {
             <div className="info-details">
               <HiOutlineDevicePhoneMobile className="info-detail-icon" />
               <div className="mobiles">
-                <a href="tel:+063320085">
+                <a href="tel:+38163320085">
                   <span>063/32-00-85</span>
                 </a>{" "}
-                | <a href="tel:+0638094839">063/8094-839</a>
+                | <a href="tel:+381638094839">063/8094-839</a>
               </div>
             </div>
 

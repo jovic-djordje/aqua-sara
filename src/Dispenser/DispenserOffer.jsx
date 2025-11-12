@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   OfferImgFive,
   OfferImgFour,
@@ -71,7 +72,7 @@ const DispenserOffer = () => {
     {
       id: 7,
       img: <OfferImgSeven className="dis-offer-img" />,
-      text: "DZV-2024 BD A",
+      text: "DZV-2024",
       cat: "Lux",
       price: "21,200.00 рсд",
       group: "lux",
@@ -118,13 +119,18 @@ const DispenserOffer = () => {
         <div className="dispensers">
           {filteredOffer.map((dispenser) => (
             <div className="dis-cart" key={dispenser.id}>
-              {dispenser.img}
+              <Link to={`/aparati/${dispenser.id}`}>{dispenser.img}</Link>
               <div className="dis-cart-dtl">
                 <p className="dis-cart-name">{dispenser.text}</p>
                 <span className="dis-cart-price">{dispenser.price}</span>
               </div>
               <p className="dis-cart-cat">{dispenser.cat}</p>
-              <button className="dis-cart-btn">Više detalja</button>
+              <Link
+                to={`/aparati/${dispenser.id}`}
+                className="dis-cart-btn-link"
+              >
+                <button className="dis-cart-btn">Više detalja</button>
+              </Link>
             </div>
           ))}
         </div>
