@@ -87,7 +87,7 @@ const DispenserOffer = () => {
   return (
     <section className="dispenser-offer">
       <div className="dispenser-offer-holder sections-holder">
-        <div className="dispenser-offer-text-holder">
+        <div className="dispenser-offer-text-holder" data-aos="fade-up">
           <div className="dispenser-title-holder">
             <h2>Naša ponuda aparata</h2>
             <p>
@@ -117,8 +117,13 @@ const DispenserOffer = () => {
         </div>
 
         <div className="dispensers">
-          {filteredOffer.map((dispenser) => (
-            <div className="dis-cart" key={dispenser.id}>
+          {filteredOffer.map((dispenser, index) => (
+            <div
+              className="dis-cart"
+              key={dispenser.id}
+              data-aos="fade-up"
+              data-aos-delay={index * 80}
+            >
               <Link to={`/aparati/${dispenser.id}`}>{dispenser.img}</Link>
               <div className="dis-cart-dtl">
                 <p className="dis-cart-name">{dispenser.text}</p>

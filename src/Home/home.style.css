@@ -43,7 +43,7 @@ html {
 
 .hero-btn {
   padding: 8px 0px;
-  border: none;
+  border: 1px solid #fff;
   border-radius: 16px;
   max-width: 180px;
   width: 100%;
@@ -51,6 +51,12 @@ html {
   font-weight: 500;
   cursor: pointer;
   color: #000;
+}
+
+.hero-btn:hover {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 .hero-img {
@@ -75,22 +81,30 @@ html {
   flex-direction: column;
   gap: 20px;
   animation: scroll-loop 20s linear infinite;
+  animation-delay: 0.1s; /* Čeka pola sekunde */
+  animation-fill-mode: backwards; /* Drži početnu poziciju */
+  will-change: transform; /* Optimizacija */
+  backface-visibility: hidden; /* Sprečava flickering */
+  -webkit-backface-visibility: hidden;
 }
 
 .column:nth-child(2) {
   animation: scroll-loop 24s linear infinite reverse;
+  animation-delay: 0.1s;
+  animation-fill-mode: backwards;
 }
 
 .item {
   width: 100%;
+  transform: translateZ(0); /* GPU akceleracija */
+  -webkit-transform: translateZ(0);
 }
 
 .hero-img {
   width: 100%;
   height: auto;
   object-fit: contain;
-  will-change: transform;
-  transform: translateZ(0);
+  display: block; /* Uklanja spacing */
 }
 
 .hero-img:hover {
@@ -100,10 +114,10 @@ html {
 /* BESKONAČNI LOOP - ključ */
 @keyframes scroll-loop {
   0% {
-    transform: translateY(0);
+    transform: translate3d(0, 0, 0); /* GPU akceleracija */
   }
   100% {
-    transform: translateY(-50%);
+    transform: translate3d(0, -50%, 0);
   }
 }
 
@@ -360,13 +374,19 @@ html {
 .faq-cta-btn {
   max-width: 120px;
   width: 100%;
+  border: 1px solid #fff;
   border-radius: 16px;
   padding: 8px 0px;
   font-family: inherit;
-  border: none;
   font-weight: 500;
   cursor: pointer;
   color: #000;
+}
+
+.faq-cta-btn:hover {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
 }
 
 @media screen and (max-width: 1200px) {

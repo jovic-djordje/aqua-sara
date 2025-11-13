@@ -496,7 +496,11 @@ const DispenserDetails = () => {
   return (
     <section className="dispenser-details-section">
       <div className="dispenser-details-section-holder sections-holder">
-        <div className="details-gallery">
+        <div
+          className="details-gallery"
+          data-aos="fade-right"
+          data-aos-duration="800"
+        >
           <div className="gallery-grid">
             <div className="main-image">
               {" "}
@@ -524,7 +528,12 @@ const DispenserDetails = () => {
 
             <div className="thumbnails">
               {dispenser.gallery.slice(0, 4).map((img, i) => (
-                <div key={i} className="thumb">
+                <div
+                  key={i}
+                  className="thumb"
+                  data-aos="zoom-in"
+                  data-aos-delay={i * 50}
+                >
                   {img}
                 </div>
               ))}
@@ -532,7 +541,11 @@ const DispenserDetails = () => {
           </div>
         </div>
 
-        <div className="details-info">
+        <div
+          className="details-info"
+          data-aos="fade-left"
+          data-aos-duration="800"
+        >
           <div className="dispenser-name-holder">
             <h2 className="dispenser-name">{dispenser.name}</h2>
             <div className="price-holder">
@@ -566,15 +579,26 @@ const DispenserDetails = () => {
           </div>
 
           {activeTabs === "karakteristike" && (
-            <ul className="advantages-list">
+            <ul
+              className="advantages-list"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               {dispenser.advantages.map((adv, i) => (
-                <li key={i}> {adv}</li>
+                <li key={i} data-aos="fade-up" data-aos-delay={i * 50}>
+                  {" "}
+                  {adv}
+                </li>
               ))}
             </ul>
           )}
 
           {activeTabs === "specifikacije" && (
-            <table className="specifications-table">
+            <table
+              className="specifications-table"
+              data-aos="fade-up"
+              data-aos-duration="500"
+            >
               <tbody>
                 {dispenser.specifications.map((spec, i) => (
                   <tr key={i}>

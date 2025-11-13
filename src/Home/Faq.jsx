@@ -65,7 +65,7 @@ const Faq = () => {
   return (
     <section className="faq">
       <div className="faq-section-holder sections-holder">
-        <div className="faq-text-holder">
+        <div className="faq-text-holder" data-aos="fade-up">
           <h2 className="faq-title h2-titles">
             Održavanje i higijena aparata za vodu
           </h2>
@@ -73,8 +73,13 @@ const Faq = () => {
         </div>
 
         <div className="questions-holder">
-          {questions.map((qusetion) => (
-            <div className="faq-holder" key={qusetion.id}>
+          {questions.map((qusetion, index) => (
+            <div
+              className="faq-holder"
+              key={qusetion.id}
+              data-aos="fade-up"
+              data-aos-delay={index * 50}
+            >
               <div className="qst-holder">
                 <h4>{qusetion.qst}</h4>
 
@@ -97,7 +102,7 @@ const Faq = () => {
           ))}
         </div>
 
-        <div className="faq-cta">
+        <div className="faq-cta" data-aos="zoom-in" data-aos-delay="100">
           <h3>Trebate više informacija?</h3>
           <p>Slobodno nas kontaktirajte kako bi pronašli pravo rešenje</p>
           <Link to="/kontakt" className="faq-cta-link">

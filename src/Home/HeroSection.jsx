@@ -23,16 +23,23 @@ const HeroSection = () => {
     <section className="hero-section">
       <div className="hero-section-holder sections-holder">
         <div className="hero-text-holder">
-          <h1 className="hero-title">Čista voda. Pametan aparat.</h1>
-          <p className="hero-text">
-            Spoj moderne tehnologije i svakodnevne udobnosti - idealno rješenje
+          <h1 className="hero-title" data-aos="fade-up" data-aos-delay="100">
+            Čista voda. Pametan aparat.
+          </h1>
+          <p className="hero-text" data-aos="fade-up" data-aos-delay="200">
+            Spoj moderne tehnologije i svakodnevne udobnosti - idealno rešenje
             za vaš dom ili kancelariju.
           </p>
-          <Link to="/aparati" className="hero-btn-link">
+          <Link
+            to="/aparati"
+            className="hero-btn-link"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <button className="hero-btn">Pogledajte našu ponudu</button>
           </Link>
         </div>
-        <div className="carousel">
+        <div className="carousel" data-aos="fade-left" data-aos-delay="200">
           <div className="column">
             {[...heroImgs.slice(0, 3), ...heroImgs.slice(0, 3)].map(
               (img, i) => (
