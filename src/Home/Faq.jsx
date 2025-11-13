@@ -81,7 +81,7 @@ const Faq = () => {
               data-aos-delay={index * 50}
             >
               <div className="qst-holder">
-                <h4>{qusetion.qst}</h4>
+                <h3>{qusetion.qst}</h3>
 
                 {isOpen === qusetion.id ? (
                   <FaMinus

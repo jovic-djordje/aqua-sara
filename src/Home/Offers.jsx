@@ -54,7 +54,7 @@ const Offer = () => {
               data-aos-delay={index * 100}
             >
               <div className="offer-cart-text">
-                <h4>{water.title}</h4>
+                <h3>{water.title}</h3>
                 <p>{water.text}</p>
                 <Link
                   to={water.link}

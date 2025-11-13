@@ -191,7 +191,7 @@ html {
   height: 100%;
 }
 
-.offer-cart-text h4 {
+.offer-cart-text h3 {
   font-family: "Outfit";
   font-size: 24px;
   font-weight: 500;
@@ -319,7 +319,7 @@ html {
   gap: 20px;
 }
 
-.qst-holder h4 {
+.qst-holder h3 {
   font-family: "Outfit";
   font-weight: 500;
   font-size: 18px;
