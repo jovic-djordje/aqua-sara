@@ -101,7 +101,11 @@ const ContactForm = () => {
   return (
     <section className="form-section">
       <div className="form-section-holder sections-holder">
-        <div className="form-text-holder">
+        <div
+          className="form-text-holder"
+          data-aos="fade-right"
+          data-aos-duration="800"
+        >
           <div className="title-holder">
             <h2 className="form-title">Javite nam se</h2>
             <p className="form-text">
@@ -111,7 +115,11 @@ const ContactForm = () => {
 
           <div className="buss-info">
             {/* EMAIL */}
-            <div className="info-details">
+            <div
+              className="info-details"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <LuMail className="info-detail-icon" />
               <a href="mailto:info@aquasarra.rs">
                 <span>info@aquasarra.rs</span>
@@ -119,7 +127,11 @@ const ContactForm = () => {
             </div>
 
             {/* FAX */}
-            <div className="info-details">
+            <div
+              className="info-details"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
               <LuPhone className="info-detail-icon" />
               <a href="tel:+381114127377">
                 <span>011/412 73 77</span>
@@ -127,7 +139,11 @@ const ContactForm = () => {
             </div>
 
             {/* MOBILE */}
-            <div className="info-details">
+            <div
+              className="info-details"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <HiOutlineDevicePhoneMobile className="info-detail-icon" />
               <div className="mobiles">
                 <a href="tel:+38163320085">
@@ -138,13 +154,21 @@ const ContactForm = () => {
             </div>
 
             {/* ADDRESS */}
-            <div className="info-details">
+            <div
+              className="info-details"
+              data-aos="fade-up"
+              data-aos-delay="250"
+            >
               <GrLocation className="info-detail-icon" />
               <span>Požeška 69/II-22, 11030 Beograd</span>
             </div>
 
             {/* PIB */}
-            <div className="info-details">
+            <div
+              className="info-details"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
               <TbId className="info-detail-icon" />
               <span>104069032</span>
             </div>
@@ -152,7 +176,11 @@ const ContactForm = () => {
         </div>
 
         {success ? (
-          <div className="success-message">
+          <div
+            className="success-message"
+            data-aos="zoom-in"
+            data-aos-duration="600"
+          >
             <h3 className="success-mess-title">
               <FaCheck className="success-mess-icon" />
               Poruka je uspešno poslata!
@@ -165,7 +193,11 @@ const ContactForm = () => {
             </button>
           </div>
         ) : (
-          <form onSubmit={handleSubmit}>
+          <form
+            onSubmit={handleSubmit}
+            data-aos="fade-left"
+            data-aos-duration="800"
+          >
             {/* FIRST AND LAST NAME */}
 
             {errors.general && (

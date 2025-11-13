@@ -65,7 +65,6 @@
   cursor: pointer;
 }
 
-/* Sakrij dugmiće dok se ne hoveruje */
 .filter-buttons {
   display: flex;
   gap: 12px;
@@ -91,7 +90,6 @@
   pointer-events: auto;
 }
 
-/* Samu ikonu možeš malo uvećati na hover radi efekta */
 .filter-icon {
   font-size: 35px;
   transition: transform 0.3s ease;
@@ -130,6 +128,7 @@
 .dis-offer-img {
   border-radius: 16px;
   width: 100%;
+  transition: all ease 0.3s;
 }
 
 .dis-offer-img:hover {
@@ -411,7 +410,7 @@
 
 .specifications-table td {
   padding: 12px 10px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .spec-label {
@@ -559,11 +558,11 @@
 
 @media screen and (max-width: 520px) {
   .dis-cart-name {
-    font-size: 12px;
+    font-size: 11px;
   }
 
   .dis-cart-price {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .dis-cart-cat {

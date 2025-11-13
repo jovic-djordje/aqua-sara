@@ -37,7 +37,7 @@ const Offer = () => {
   return (
     <section className="offer">
       <div className="offer-holder sections-holder">
-        <div className="offer-text-holder">
+        <div className="offer-text-holder" data-aos="fade-up">
           <h2 className="offer-title h2-titles">Ponuda voda</h2>
           <p className="offer-text">
             Pored aparata za vodu vrhunskog kvaliteta, Aqua Sarra se bavi
@@ -46,8 +46,13 @@ const Offer = () => {
           </p>
         </div>
         <div className="offer-carts-holder">
-          {waterOffers.map((water) => (
-            <div className="offer-cart" key={water.id}>
+          {waterOffers.map((water, index) => (
+            <div
+              className="offer-cart"
+              key={water.id}
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
               <div className="offer-cart-text">
                 <h4>{water.title}</h4>
                 <p>{water.text}</p>
