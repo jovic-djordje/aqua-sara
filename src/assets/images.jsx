@@ -4,11 +4,23 @@ import waterTwo from "./ponuda-voda (2).webp";
 import waterThree from "./ponuda-voda (3).webp";
 import waterFour from "./ponuda-voda (4).webp";
 import galleryImgOne from "./galerija.webp";
+import galleryImgOne400 from "./galerija-400.webp";
+import galleryImgOne800 from "./galerija-800.webp";
 import galleryImgTwo from "./galerija (2).webp";
+import galleryImgTwo400 from "./galerija (2)-400.webp";
+import galleryImgTwo800 from "./galerija (2)-400.webp";
 import galleryImgThree from "./galerija (3).webp";
+import galleryImgThree400 from "./galerija (3)-400.webp";
+import galleryImgThree800 from "./galerija (3)-800.webp";
 import galleryImgFour from "./galerija (4).webp";
+import galleryImgFour400 from "./galerija (4)-400.webp";
+import galleryImgFour800 from "./galerija (4)-800.webp";
 import galleryImgFive from "./galerija (5).webp";
+import galleryImgFive400 from "./galerija (5)-400.webp";
+import galleryImgFive800 from "./galerija (5)-800.webp";
 import galleryImgSix from "./galerija (6).webp";
+import galleryImgSix400 from "./galerija (6)-400.webp";
+import galleryImgSix800 from "./galerija (6)-800.webp";
 import offerImgOne from "./Colisha.webp";
 import offerImgTwo from "./DZV-1701.webp";
 import offerImgThree from "./DZV-2004 K.webp";
@@ -138,7 +150,16 @@ const WaterFour = ({ className }) => {
 const GalleryImgOne = ({ className }) => {
   return (
     <img
-      src={galleryImgOne}
+      src={galleryImgOne800}
+      srcSet={`
+        ${galleryImgOne400} 400w,
+        ${galleryImgOne800} 800w,
+        ${galleryImgOne} 1200w
+      `}
+      sizes="(max-width: 600px) 100vw, 
+             (max-width: 1200px) 50vw, 
+             33vw"
+      loading="lazy"
       alt="slika aparata za vodu"
       className={className}
     />
@@ -147,7 +168,16 @@ const GalleryImgOne = ({ className }) => {
 const GalleryImgTwo = ({ className }) => {
   return (
     <img
-      src={galleryImgTwo}
+      src={galleryImgTwo800}
+      srcSet={`
+        ${galleryImgTwo400} 400w,
+        ${galleryImgTwo800} 800w,
+        ${galleryImgTwo} 1200w
+      `}
+      sizes="(max-width: 600px) 100vw, 
+             (max-width: 1200px) 50vw, 
+             33vw"
+      loading="lazy"
       alt="slika aparata za vodu"
       className={className}
     />
@@ -157,7 +187,16 @@ const GalleryImgTwo = ({ className }) => {
 const GalleryImgThree = ({ className }) => {
   return (
     <img
-      src={galleryImgThree}
+      src={galleryImgThree800}
+      srcSet={`
+        ${galleryImgThree400} 400w,
+        ${galleryImgThree800} 800w,
+        ${galleryImgThree} 1200w
+      `}
+      sizes="(max-width: 600px) 100vw, 
+             (max-width: 1200px) 50vw, 
+             33vw"
+      loading="lazy"
       alt="slika aparata za vodu"
       className={className}
     />
@@ -167,7 +206,16 @@ const GalleryImgThree = ({ className }) => {
 const GalleryImgFour = ({ className }) => {
   return (
     <img
-      src={galleryImgFour}
+      src={galleryImgFour800}
+      srcSet={`
+        ${galleryImgFour400} 400w,
+        ${galleryImgFour800} 800w,
+        ${galleryImgFour} 1200w
+      `}
+      sizes="(max-width: 600px) 100vw, 
+             (max-width: 1200px) 50vw, 
+             33vw"
+      loading="lazy"
       alt="slika aparata za vodu"
       className={className}
     />
@@ -177,7 +225,16 @@ const GalleryImgFour = ({ className }) => {
 const GalleryImgFive = ({ className }) => {
   return (
     <img
-      src={galleryImgFive}
+      src={galleryImgFive800}
+      srcSet={`
+        ${galleryImgFive400} 400w,
+        ${galleryImgFive800} 800w,
+        ${galleryImgFive} 1200w
+      `}
+      sizes="(max-width: 600px) 100vw, 
+             (max-width: 1200px) 50vw, 
+             33vw"
+      loading="lazy"
       alt="slika aparata za vodu"
       className={className}
     />
@@ -187,7 +244,16 @@ const GalleryImgFive = ({ className }) => {
 const GalleryImgSix = ({ className }) => {
   return (
     <img
-      src={galleryImgSix}
+      src={galleryImgSix800} // srednja rezolucija kao fallback
+      srcSet={`
+        ${galleryImgSix400} 400w,
+        ${galleryImgSix800} 800w,
+        ${galleryImgSix} 1200w
+      `}
+      sizes="(max-width: 600px) 100vw, 
+             (max-width: 1200px) 50vw, 
+             33vw"
+      loading="lazy"
       alt="slika aparata za vodu"
       className={className}
     />
