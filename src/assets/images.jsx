@@ -133,19 +133,55 @@ const Logo = ({ className }) => {
 };
 
 const WaterOne = ({ className }) => {
-  return <img src={waterOne} alt="aqua sara" className={className} />;
+  return (
+    <img
+      src={waterOne}
+      alt="aqua sara"
+      className={className}
+      sizes="(max-width: 1000px) 500px,
+         300px"
+      loading="lazy"
+    />
+  );
 };
 
 const WaterTwo = ({ className }) => {
-  return <img src={waterTwo} alt="kraljeva voda" className={className} />;
+  return (
+    <img
+      src={waterTwo}
+      alt="kraljeva voda"
+      className={className}
+      sizes="(max-width: 1000px) 500px,
+         300px"
+      loading="lazy"
+    />
+  );
 };
 
 const WaterThree = ({ className }) => {
-  return <img src={waterThree} alt="odmenjska voda" className={className} />;
+  return (
+    <img
+      src={waterThree}
+      alt="odmenjska voda"
+      className={className}
+      sizes="(max-width: 1000px) 500px,
+         300px"
+      loading="lazy"
+    />
+  );
 };
 
 const WaterFour = ({ className }) => {
-  return <img src={waterFour} alt="golijska ledena" className={className} />;
+  return (
+    <img
+      src={waterFour}
+      alt="golijska ledena"
+      className={className}
+      sizes="(max-width: 1000px) 500px,
+         300px"
+      loading="lazy"
+    />
+  );
 };
 
 const GalleryImgOne = ({ className }) => {
@@ -157,9 +193,8 @@ const GalleryImgOne = ({ className }) => {
         ${galleryImgOne400} 400w,
         ${galleryImgOne800} 800w
       `}
-      sizes="(max-width: 600px) 100vw, 
-             (max-width: 1200px) 50vw, 
-             33vw"
+      sizes="(max-width: 800px) 380px,  
+             250px"
       loading="lazy"
       alt="slika aparata za vodu"
       className={className}
@@ -175,9 +210,8 @@ const GalleryImgTwo = ({ className }) => {
         ${galleryImgTwo400} 400w,
         ${galleryImgTwo800} 800w
       `}
-      sizes="(max-width: 600px) 100vw, 
-             (max-width: 1200px) 50vw, 
-             33vw"
+      sizes="(max-width: 800px) 380px,  
+             250px"
       loading="lazy"
       alt="slika aparata za vodu"
       className={className}
@@ -194,9 +228,8 @@ const GalleryImgThree = ({ className }) => {
         ${galleryImgThree400} 400w,
         ${galleryImgThree800} 800w
       `}
-      sizes="(max-width: 600px) 100vw, 
-             (max-width: 1200px) 50vw, 
-             33vw"
+      sizes="(max-width: 800px) 380px,  
+             250px"
       loading="lazy"
       alt="slika aparata za vodu"
       className={className}
@@ -213,9 +246,8 @@ const GalleryImgFour = ({ className }) => {
         ${galleryImgFour400} 400w,
         ${galleryImgFour800} 800w
       `}
-      sizes="(max-width: 600px) 100vw, 
-             (max-width: 1200px) 50vw, 
-             33vw"
+      sizes="(max-width: 800px) 380px,  
+             250px"
       loading="lazy"
       alt="slika aparata za vodu"
       className={className}
@@ -232,9 +264,8 @@ const GalleryImgFive = ({ className }) => {
         ${galleryImgFive400} 400w,
         ${galleryImgFive800} 800w
       `}
-      sizes="(max-width: 600px) 100vw, 
-             (max-width: 1200px) 50vw, 
-             33vw"
+      sizes="(max-width: 800px) 380px,  
+             250px"
       loading="lazy"
       alt="slika aparata za vodu"
       className={className}
@@ -251,9 +282,8 @@ const GalleryImgSix = ({ className }) => {
         ${galleryImgSix400} 400w,
         ${galleryImgSix800} 800w
       `}
-      sizes="(max-width: 600px) 100vw, 
-             (max-width: 1200px) 50vw, 
-             33vw"
+      sizes="(max-width: 800px) 380px,  
+             250px"
       loading="lazy"
       alt="slika aparata za vodu"
       className={className}

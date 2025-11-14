@@ -22,7 +22,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <Navigation />
-      <div className="main-content">
+      <main className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aparati" element={<Dispenser />} />
@@ -30,7 +30,7 @@ function App() {
           <Route path="/kontakt" element={<Contact />} />
         </Routes>
         <Footer />
-      </div>
+      </main>
     </Router>
   );
 }
