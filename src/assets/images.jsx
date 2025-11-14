@@ -4,21 +4,22 @@ import waterTwo from "./ponuda-voda (2).webp";
 import waterThree from "./ponuda-voda (3).webp";
 import waterFour from "./ponuda-voda (4).webp";
 import galleryImgOne from "./galerija.webp";
+import galleryImgOne250 from "./galerija-250.webp";
 import galleryImgOne400 from "./galerija-400.webp";
 import galleryImgOne800 from "./galerija-800.webp";
-import galleryImgTwo from "./galerija (2).webp";
+import galleryImgTwo250 from "./galerija (2)-250.webp";
 import galleryImgTwo400 from "./galerija (2)-400.webp";
 import galleryImgTwo800 from "./galerija (2)-400.webp";
-import galleryImgThree from "./galerija (3).webp";
+import galleryImgThree250 from "./galerija (3)-250.webp";
 import galleryImgThree400 from "./galerija (3)-400.webp";
 import galleryImgThree800 from "./galerija (3)-800.webp";
-import galleryImgFour from "./galerija (4).webp";
+import galleryImgFour250 from "./galerija (4)-250.webp";
 import galleryImgFour400 from "./galerija (4)-400.webp";
 import galleryImgFour800 from "./galerija (4)-800.webp";
-import galleryImgFive from "./galerija (5).webp";
+import galleryImgFive250 from "./galerija (5)-250.webp";
 import galleryImgFive400 from "./galerija (5)-400.webp";
 import galleryImgFive800 from "./galerija (5)-800.webp";
-import galleryImgSix from "./galerija (6).webp";
+import galleryImgSix250 from "./galerija (6)-250.webp";
 import galleryImgSix400 from "./galerija (6)-400.webp";
 import galleryImgSix800 from "./galerija (6)-800.webp";
 import offerImgOne from "./Colisha.webp";
@@ -150,11 +151,11 @@ const WaterFour = ({ className }) => {
 const GalleryImgOne = ({ className }) => {
   return (
     <img
-      src={galleryImgOne800}
+      src={galleryImgOne400}
       srcSet={`
+        ${galleryImgOne250} 250w,
         ${galleryImgOne400} 400w,
-        ${galleryImgOne800} 800w,
-        ${galleryImgOne} 1200w
+        ${galleryImgOne800} 800w
       `}
       sizes="(max-width: 600px) 100vw, 
              (max-width: 1200px) 50vw, 
@@ -168,11 +169,11 @@ const GalleryImgOne = ({ className }) => {
 const GalleryImgTwo = ({ className }) => {
   return (
     <img
-      src={galleryImgTwo800}
+      src={galleryImgTwo400}
       srcSet={`
+        ${galleryImgTwo250} 250w,
         ${galleryImgTwo400} 400w,
-        ${galleryImgTwo800} 800w,
-        ${galleryImgTwo} 1200w
+        ${galleryImgTwo800} 800w
       `}
       sizes="(max-width: 600px) 100vw, 
              (max-width: 1200px) 50vw, 
@@ -187,11 +188,11 @@ const GalleryImgTwo = ({ className }) => {
 const GalleryImgThree = ({ className }) => {
   return (
     <img
-      src={galleryImgThree800}
+      src={galleryImgThree400}
       srcSet={`
+        ${galleryImgThree250} 250w,
         ${galleryImgThree400} 400w,
-        ${galleryImgThree800} 800w,
-        ${galleryImgThree} 1200w
+        ${galleryImgThree800} 800w
       `}
       sizes="(max-width: 600px) 100vw, 
              (max-width: 1200px) 50vw, 
@@ -206,11 +207,11 @@ const GalleryImgThree = ({ className }) => {
 const GalleryImgFour = ({ className }) => {
   return (
     <img
-      src={galleryImgFour800}
+      src={galleryImgFour400}
       srcSet={`
+        ${galleryImgFour250} 250w,
         ${galleryImgFour400} 400w,
-        ${galleryImgFour800} 800w,
-        ${galleryImgFour} 1200w
+        ${galleryImgFour800} 800w
       `}
       sizes="(max-width: 600px) 100vw, 
              (max-width: 1200px) 50vw, 
@@ -225,11 +226,11 @@ const GalleryImgFour = ({ className }) => {
 const GalleryImgFive = ({ className }) => {
   return (
     <img
-      src={galleryImgFive800}
+      src={galleryImgFive400}
       srcSet={`
+        ${galleryImgFive250} 250w,
         ${galleryImgFive400} 400w,
-        ${galleryImgFive800} 800w,
-        ${galleryImgFive} 1200w
+        ${galleryImgFive800} 800w
       `}
       sizes="(max-width: 600px) 100vw, 
              (max-width: 1200px) 50vw, 
@@ -244,11 +245,11 @@ const GalleryImgFive = ({ className }) => {
 const GalleryImgSix = ({ className }) => {
   return (
     <img
-      src={galleryImgSix800} // srednja rezolucija kao fallback
+      src={galleryImgSix400} // srednja rezolucija kao fallback
       srcSet={`
+        ${galleryImgSix250} 250w,
         ${galleryImgSix400} 400w,
-        ${galleryImgSix800} 800w,
-        ${galleryImgSix} 1200w
+        ${galleryImgSix800} 800w
       `}
       sizes="(max-width: 600px) 100vw, 
              (max-width: 1200px) 50vw, 
